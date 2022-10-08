@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link href="images/LOGO 2.png" rel="icon">
+    <meta property="og:url" content="faraja_portfolio.com">
+    <meta property="og:image" content="images/_MG_8717nento.JPG">
+
+    <meta name="description" content="Mon portofolio pour ma connaissance de mon domaine de dévéloppeur">
+    <meta name="keywords" content="developpeur">
+    <meta name="author" content="Faraja mpenda swedi">
+    <meta name="categories" content="portofolio">
+    <meta name="generator" content="portfolio faraja">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link href="protofolio_04_04.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="wb.carousel.effects.min.js"></script>
+    <script src="util.min.js"></script>
+    <script src="scrollspy.min.js"></script>
+    <script src="wb.stickylayer.min.js"></script>
+    <script src="wwb17.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#wb_Image3').addClass('visibility-hidden');
+            $('#wb_Image4').addClass('visibility-hidden');
+            $('#wb_Image5').addClass('visibility-hidden');
+            var Carousel1Opts = {
+                delay: 5000,
+                duration: 1000,
+                easing: 'linear',
+                mode: 'fade',
+                direction: '',
+                scalemode: 1,
+                pagination: true,
+                pause: null,
+                start: 0
+            };
+            $("#Carousel1").carouseleffects(Carousel1Opts);
+            $("#Carousel1_back a").click(function() {
+                $('#Carousel1').carouseleffects('prev');
+            });
+            $("#Carousel1_next a").click(function() {
+                $('#Carousel1').carouseleffects('next');
+            });
+            $("#wb_ResponsiveMenu1 ul li a").click(function(event) {
+                $("#wb_ResponsiveMenu1 input").prop("checked", false);
+            });
+
+            function onScrollBookmark1() {
+                var $obj = $("#wb_Bookmark1");
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Image3', 'slide-left-in', 500, 600);
+                    AnimateCss('wb_Text11', 'slide-left-in', 500, 600);
+                    AnimateCss('wb_Image4', 'heartbeat-1', 500, 600);
+                    AnimateCss('wb_Text12', 'filter-hue-rotate', 500, 600);
+                    AnimateCss('wb_Image5', 'slide-right-in', 500, 600);
+                    AnimateCss('wb_Text13', 'slide-right-in', 500, 600);
+                } else
+                if ($obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                }
+            }
+            if (!$('#wb_Bookmark1').inViewPort(true)) {
+                $('#wb_Bookmark1').addClass("in-viewport");
+            }
+            onScrollBookmark1();
+            $(window).scroll(function(event) {
+                onScrollBookmark1();
+            });
+
+            function onScrollBookmark2() {
+                var $obj = $("#wb_Bookmark2");
+                if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                    AnimateCss('wb_Image3', 'slide-left-in', 500, 600);
+                    AnimateCss('wb_Image4', 'shadow-scale', 500, 600);
+                    AnimateCss('wb_Image5', 'slide-right-in', 500, 600);
+                } else
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('wb_Text11', 'slide-left-in', 500, 600);
+                    AnimateCss('wb_Text12', 'filter-hue-rotate', 500, 600);
+                    AnimateCss('wb_Text13', 'slide-right-in', 500, 600);
+                }
+            }
+            if (!$('#wb_Bookmark2').inViewPort(true)) {
+                $('#wb_Bookmark2').addClass("in-viewport");
+            }
+            onScrollBookmark2();
+            $(window).scroll(function(event) {
+                onScrollBookmark2();
+            });
+
+            function onScrollBookmark3() {
+                var $obj = $("#wb_Bookmark3");
+                if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true)) {
+                    $obj.removeClass("in-viewport");
+                    AnimateCss('Layer7', 'animate-fade-in-down', 0, 1000);
+                } else
+                if ($obj.inViewPort(false)) {
+                    $obj.addClass("in-viewport");
+                }
+            }
+            if (!$('#wb_Bookmark3').inViewPort(true)) {
+                $('#wb_Bookmark3').addClass("in-viewport");
+            }
+            onScrollBookmark3();
+            $(window).scroll(function(event) {
+                onScrollBookmark3();
+            });
+            $("#Layer2").stickylayer({
+                orientation: 9,
+                position: [0, 0],
+                delay: 500
+            });
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" style="overflow-x:hidden;">
+    <div id="container">
+        <div id="wb_Heading1">
+            <h1 id="Heading1">Langages que j'utilise</h1>
+        </div>
+        <div id="wb_Text10">
+            <span style="color:#696969;font-family:Arial;font-size:13px;">pour creer mes applications ou mes projets, j'utilise les langages de la programation suivantes</span></div>
+        <div id="Layer6">
+            <div id="wb_Card3" class="card" onmouseenter="AnimateCss('wb_Card3', 'transform-wiggle', 0, 500);return false;">
+                <div id="Card3-card-body">
+                    <img id="Card3-card-item0" src="images/images.jpg" width="187" height="157" alt="cakephp" title="">
+                    <div id="Card3-card-item1">Wordpress</div>
+                    <div id="Card3-card-item2">c'est un cms qui me permet de creer les sites vitrine</div>
+                </div>
+            </div>
+            <div id="wb_Card1" class="card" onmouseenter="AnimateCss('wb_Card1', 'transform-wiggle', 0, 500);return false;">
+                <div id="Card1-card-body">
+                    <img id="Card1-card-item0" src="images/Cakephp_logo.png" width="316" height="250" alt="cakephp" title="">
+                    <div id="Card1-card-item1">Cakephp</div>
+                    <div id="Card1-card-item2">c'est un framework de php qui sert à la securité et à organiser les codes avec les systeme mvc</div>
+                </div>
+            </div>
+            <div id="wb_Text15">
+                <span style="color:#696969;font-family:Arial;font-size:13px;">J'utilise les different framework pour mes facilité les tâches au dévéloppement des projet et la sécurité de&nbsp; mes projets. Ces framework mes permet aussi de créer plus vite et satisfère mes clients.</span></div>
+            <div id="wb_Card2" class="card" onmouseenter="AnimateCss('wb_Card2', 'transform-wiggle', 0, 500);return false;">
+                <div id="Card2-card-body">
+                    <img id="Card2-card-item0" src="images/jquery-logo-vertical_large_square.png" width="240" height="240" alt="cakephp" title="">
+                    <div id="Card2-card-item1">Jquery</div>
+                    <div id="Card2-card-item2">C'est framework du javascript qui me permet de creer des évenements, animation et l'utilisation d'ajax</div>
+                </div>
+            </div>
+            <div id="wb_Text14">
+                <span style="color:#000000;font-family:'Lucida Console';font-size:17px;"><strong>FRAMEWORK ET CMS</strong></span></div>
+        </div>
+        <div id="Layer8">
+            <div id="wb_Image6">
+                <img src="images/Adobe_XD_CC_icon.svg.png" id="Image6" alt="" width="1" height="1"></div>
+            <div id="wb_Image9">
+                <img src="images/Wondershare_filmora_logo.svg.png" id="Image9" alt="" width="36" height="36"></div>
+            <div id="wb_Image8">
+                <img src="images/WYSIWYG-Web-Builder-17.png" id="Image8" alt="" width="36" height="36"></div>
+            <div id="wb_Image7">
+                <img src="images/adobe-photoshop-express-logo-CB0F9C1CDD-seeklogo.com.png" id="Image7" alt="" width="36" height="36"></div>
+            <div id="Layer9">
+                <div id="wb_Image12">
+                    <img src="images/png-clipart-logo-brand-product-design-trademark-oracle-database-powerpoint-text-trademark.png" id="Image12" alt="" width="58" height="16"></div>
+                <div id="wb_Image11">
+                    <img src="images/png-clipart-logo-microsoft-sql-font-design-text-logo.png" id="Image11" alt="" width="52" height="13"></div>
+                <div id="wb_Text21">
+                    <span style="color:#000000;font-family:Georgia;font-size:13px;"><strong>Base de données utiliser</strong></span></div>
+                <div id="wb_Image10">
+                    <img src="MySQL-logo.svg" id="Image10" alt="" width="49" height="33"></div>
+            </div>
+            <div id="wb_Image13">
+                <img src="images/Visual_Studio_Code_1.35_icon.svg.png" id="Image13" alt="" width="36" height="36"></div>
+            <div id="wb_Image18">
+                <img src="images/Adobe_XD_CC_icon.svg.png" id="Image18" alt="" width="36" height="35"></div>
+            <div id="wb_Text16">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>Adobe xd pour marquette</strong></span></div>
+            <div id="wb_Text20">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>Mes outils des maquette et de mes projet </strong></span></div>
+            <div id="wb_Text18">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>Adobe photoshop pour les images</strong></span></div>
+            <div id="wb_Text17">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>WYSIWYG Web pour marquette web</strong></span></div>
+            <div id="wb_Text19">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>filmora pour montage video</strong></span></div>
+            <div id="wb_Text22">
+                <span style="color:#000000;font-family:Georgia;font-size:8px;"><strong>Vs code mon&nbsp; editeur de code</strong></span></div>
+            <div id="wb_Line1">
+                <img src="images/img0001.png" id="Line1" alt="" width="201" height="-1"></div>
+        </div>
+        <div id="Layer7">
+            <div id="wb_Image14">
+                <img src="images/GitHub-Logo.png" id="Image14" alt="" width="105" height="59"></div>
+            <div id="wb_Image15">
+                <img src="images/Gmail-Logo.png" id="Image15" alt="" width="105" height="59"></div>
+            <div id="wb_Image17">
+                <img src="images/Zoom-logo-500x281.png" id="Image17" alt="" width="105" height="59"></div>
+            <div id="wb_Text23">
+                <span style="color:#4F4F4F;font-family:Georgia;font-size:13px;">Voici les différents plateforme que j'utilise pour communiquer avec mes clients. cette méthode mes facilités a mieux développé mes projèts et satisfères mes clients </span></div>
+            <div id="wb_Image16">
+                <img src="images/Flat-logo-WhatsApp-PNG.png" id="Image16" alt="" width="105" height="105"></div>
+        </div>
+        <div id="wb_Bookmark1">
+            <div id="Bookmark1"></div>
+        </div>
+        <div id="wb_Bookmark2">
+            <div id="Bookmark2"></div>
+        </div>
+        <div id="wb_Bookmark3">
+            <div id="Bookmark3"></div>
+        </div>
+        <script>
+            var wb_Timer1;
+
+            function TimerStartTimer1() {
+                wb_Timer1 = setInterval(function() {
+                    var event = null;
+                    ShowObjectWithEffect('Layer12', 0, 'fade', 500);
+                    AnimateCss('wb_Text3', 'animate-fade-in', 0, 300);
+                }, 2000);
+            }
+
+            function TimerStopTimer1() {
+                clearInterval(wb_Timer1);
+            }
+            TimerStartTimer1();
+        </script>
+
+        <div id="Layer11">
+            <div id="wb_Text8">
+                <span style="color:#F5F5F5;font-family:Arial;font-size:15px;"><strong>Copy-right reserved by </strong></span><span style="color:#0000CD;font-family:Arial;font-size:15px;"><strong>Faraja</strong></span></div>
+        </div>
+    </div>
+    <div id="wb_Carousel1">
+        <div id="Carousel1">
+            <div class="frame frame-1">
+            </div>
+            <div class="frame frame-2" style="display:none">
+            </div>
+        </div>
+        <div id="Carousel1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+        <div id="Carousel1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+    </div>
+    <div id="Layer3">
+        <input type="submit" id="Button1" name="" value="facebook" autofocus title="f">
+        <div id="wb_Text5">
+            <span style="color:#F5F5F5;font-family:Georgia;font-size:11px;"><strong>Bonjour,</strong></span></div>
+        <div id="wb_Text3">
+            <span style="background-color:#0000FF;color:#F5F5F5;font-family:Arial;font-size:11px;"><strong>FARAJA MPENDA SWEDI</strong></span></div>
+        <a id="Button2" href="">twitter</a>
+        <div id="wb_Text6">
+            <span style="color:#F5F5F5;font-family:Georgia;font-size:13px;"><strong>Je suis dévéloppeur web freelance</strong></span></div>
+        <div id="wb_Text7">
+            <span style="color:#F5F5F5;font-family:Georgia;font-size:11px;"><strong>bienvenue dans mon portfolio</strong></span></div>
+    </div>
+    <header id="Layer1">
+        <div id="Layer1_Container">
+            <div id="wb_ResponsiveMenu1">
+                <label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+                <input type="checkbox" id="ResponsiveMenu1-submenu">
+                <ul class="nav ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+                    <li class="nav" role="menuitem"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav" role="menuitem"><a href="./projets.html" class="nav-link">PROJETS</a></li>
+                    <li class="nav" role="menuitem"><a href="./cv.html" class="nav-link">CV</a></li>
+                    <li class="nav" role="menuitem"><a href="./contact.php" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="wb_Image1">
+                <img src="images/LOGO 2.png" id="Image1" alt="" width="45" height="34"></div>
+            <div id="wb_Text2">
+                <span style="color:#F5F5F5;font-family:Arial;font-size:17px;"><strong>Faraja</strong></span></div>
+            <div id="wb_Text1">
+                <span style="background-color:#FFA500;color:#F5F5F5;font-family:Arial;font-size:11px;">swediroben@gmail.com</span></div>
+            <div id="wb_CssMenu1">
+                <ul id="CssMenu1" role="menubar" class="nav">
+                    <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./index.html" target="_self">HOME</a>
+                    </li>
+                    <li role="menuitem" class="nav-item"><a class="nav-link" href="./projets.html" target="_self">PROJET</a>
+                    </li>
+                    <li role="menuitem" class="nav-item"><a class="nav-link" href="./cv.html" target="_self">CV</a>
+                    </li>
+                    <li role="menuitem" class="nav-item"><a class="nav-link" href="./contact.php" target="_self">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="Layer5">
+        <div id="wb_Image4">
+            <img src="images/Unofficial_JavaScript_logo_2.svg.png" id="Image4" alt="" width="71" height="71"></div>
+        <div id="wb_Image5">
+            <img src="images/PHP-logo.svg.png" id="Image5" alt="" width="73" height="39"></div>
+        <div id="wb_Text12">
+            <span style="color:#000000;font-family:Arial;font-size:11px;"><strong>PHP</strong></span></div>
+        <div id="wb_Text13">
+            <span style="color:#000000;font-family:Arial;font-size:11px;"><strong>JAVASCRIPT </strong></span></div>
+        <div id="wb_Text11">
+            <span style="color:#000000;font-family:Arial;font-size:11px;"><strong>HTML ET CSS</strong></span></div>
+        <div id="wb_Image3">
+            <img src="images/kisspng-web-development-html-css3-the-ohana-code-logo-2cpaper-projection-shaded_1660937-html-dropdown-js-5aebd5631cd291.7591600015254050271181.jpg" id="Image3" alt="" width="78" height="45"></div>
+    </div>
+    <div id="Layer12">
+        <div id="Layer12_Container">
+            <div id="Layer2">
+                <div id="Layer2_Container">
+                    <div id="wb_Image2">
+                        <img src="images/Cat licking paw.gif" id="Image2" alt="" width="150" height="122"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Layer13">
+        <div id="wb_Text9">
+            <span style="color:#F0F8FF;font-family:Arial;font-size:15px;"><strong>Copy-right reserved b</strong></span><span style="color:#F5F5F5;font-family:Arial;font-size:15px;"><strong>y </strong></span><span style="color:#0000CD;font-family:Arial;font-size:15px;"><strong>Faraja</strong></span></div>
+        <div id="Layer14">
+            <div id="wb_CssMenu3">
+                <ul id="CssMenu3" role="menubar" class="nav">
+                    <li role="menuitem" class="nav-item firstmain"><a class="nav-link CssMenu3-effect" href="" target="_self"><i class="fa fa-facebook-square">&nbsp;</i></a>
+                    </li>
+                    <li role="menuitem" class="nav-item"><a class="nav-link CssMenu3-effect" href="" target="_self"><i class="fa fa-twitter-square">&nbsp;</i></a>
+                    </li>
+                    <li role="menuitem" class="nav-item"><a class="nav-link CssMenu3-effect" href="" target="_self"><i class="fa fa-google">&nbsp;</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
