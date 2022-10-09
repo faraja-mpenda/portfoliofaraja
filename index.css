@@ -142,7 +142,7 @@ input:focus, textarea:focus, select:focus
 }
 #Carousel1 .frame-1
 { 
-   background-image: url('images/_MG_8717nento.JPG');
+   background-image: url('https://github.com/faraja-mpenda/portfoliofaraja/tree/main/images/_MG_8717nento.JPG');
    background-repeat: repeat;
    background-position: center center;
    background-attachment: scroll;
@@ -150,7 +150,7 @@ input:focus, textarea:focus, select:focus
 }
 #Carousel1 .frame-2
 { 
-   background-image: url('images/_MG_8817nento.JPG');
+   background-image: url('https://github.com/faraja-mpenda/portfoliofaraja/tree/main/images/_MG_8817nento.JPG');
    background-repeat: repeat;
    background-position: left top;
    background-attachment: scroll;
